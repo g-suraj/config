@@ -1,0 +1,6 @@
+[shell]
+program = "/opt/homebrew/bin/zsh"
+
+[font]
+normal = { family = "Fira Code", style = "Regular"}
+size = 14
