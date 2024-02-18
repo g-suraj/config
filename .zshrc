@@ -17,7 +17,7 @@ base16_ocean
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias vim="nvim"
 alias zshrc="vim ~/.zshrc"
-alias \ls="eza"
+alias \ls="eza -a"
 alias vimrc="vim ~/.config/nvim/init.lua"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"

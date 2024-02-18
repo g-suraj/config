@@ -82,7 +82,7 @@ keyset({"i"}, "kj", "<Esc>")
 
 -- options/settings
 vim.opt.undofile = true
-vim.opt.undodir = "~/.nvim/undodir"
+vim.opt.undodir = "undodir"
 vim.opt.swapfile = false
 vim.opt.termguicolors = true
 vim.opt.tabstop = 4
