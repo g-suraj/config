@@ -1,6 +1,17 @@
+[window]
+decorations = "None"
+startup_mode = "Maximized"
+padding = { x = 5, y = 10 }
+
 [shell]
 program = "/opt/homebrew/bin/zsh"
 
 [font]
 normal = { family = "Fira Code", style = "Regular"}
-size = 14
+size = 16
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+hide_when_typing = true
