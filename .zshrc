@@ -4,7 +4,7 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 ZSH_THEME="suraj"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-plugins=(git)
+plugins=()
 source $ZSH/oh-my-zsh.sh
 HISTSIZE=10000000
 SAVEHIST=10000000
@@ -19,6 +19,8 @@ alias vim="nvim"
 alias zshrc="vim ~/.zshrc"
 alias \ls="eza -a"
 alias vimrc="vim ~/.config/nvim/init.lua"
+alias status="git status"
+alias gc="git checkout"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

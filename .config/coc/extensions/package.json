@@ -3,6 +3,9 @@
     "coc-sumneko-lua": ">=0.0.40",
     "coc-json": ">=1.9.2",
     "coc-snippets": ">=3.1.10",
-    "coc-pyright": ">=1.1.348"
+    "coc-pyright": ">=1.1.348",
+    "@yaegassy/coc-astro": ">=0.6.12",
+    "coc-tsserver": ">=2.1.4",
+    "coc-css": ">=2.1.0"
   }
 }

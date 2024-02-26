@@ -56,7 +56,7 @@ require("lazy").setup({
             local configs = require("nvim-treesitter.configs")
             configs.setup({
                 ensure_installed = {
-                    "lua", "vim", "vimdoc", "javascript", "html", "python",
+                    "lua", "vim", "vimdoc", "javascript", "html", "python", "astro",
                 },
                 sync_install = false,
                 highlight = {enable = true},
@@ -79,10 +79,23 @@ keyset({"i"}, "<C-q>", function() require("luasnip").expand() end,
 keyset({"i"}, "jk", "<Esc>")
 keyset({"i"}, "kj", "<Esc>")
 keyset({"i"}, "kj", "<Esc>")
+keyset({"n"}, "<C-P>", ":Files<CR>")
+
+vim.cmd([[
+let $FZF_DEFAULT_COMMAND = 'rg --files --hidden -g "!.git/"'
+command W w
+command Wq wq
+
+set foldmethod=expr
+set foldlevel=9999
+set foldexpr=nvim_treesitter#foldexpr()
+set nofoldenable                     " Disable folding at startup.
+
+]])
 
 -- options/settings
 vim.opt.undofile = true
-vim.opt.undodir = "undodir"
+vim.opt.undodir = "/Users/surajg/.config/nvim/undodir"
 vim.opt.swapfile = false
 vim.opt.termguicolors = true
 vim.opt.tabstop = 4
